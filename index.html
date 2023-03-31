@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image popup</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div>
+        <img id="mainImg" src="blog-1.jpg" height="400" width="600" alt="">
+    </div>
+    <br>
+    <br>
+    <img onclick="img1()" src="blog-2.jpg" alt="" height="150" width="150">
+    <img onclick="img2()" src="blog-3.jpg" alt="" height="150" width="150">
+    <img onclick="img3()" src="blog-4.jpg" alt="" height="150" width="150">
+    <img  onclick="img4()" src="blog-5.jpg" alt="" height="150" width="150">
+
+    <script>
+        var mainImg =  document.getElementById('mainImg');
+        function img1(){
+            mainImg.src = 'blog-2.jpg';
+        }
+        function img2(){
+            mainImg.src = 'blog-3.jpg';
+        }
+        function img3(){
+            mainImg.src = 'blog-4.jpg';
+        }
+        function img4(){
+            mainImg.src = 'blog-5.jpg';
+        }
+    </script>
+</body>
+</html>
